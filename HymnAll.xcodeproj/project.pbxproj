@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		290545BB1D59403F00D1C862 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290545BA1D59403F00D1C862 /* Alamofire.framework */; };
 		290545BD1D59404200D1C862 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290545BC1D59404200D1C862 /* SwiftyJSON.framework */; };
+		290545BF1D59526B00D1C862 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 290545BE1D59526B00D1C862 /* background.jpg */; };
+		290545C11D59811300D1C862 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290545C01D59811300D1C862 /* SearchCell.xib */; };
+		290545C31D5981A500D1C862 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290545C21D5981A500D1C862 /* SearchCell.swift */; };
+		290545C51D59A1F800D1C862 /* HymnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290545C41D59A1F800D1C862 /* HymnView.swift */; };
+		290545C71D59A20800D1C862 /* HymnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290545C61D59A20800D1C862 /* HymnView.xib */; };
+		2916FCE81D5C21A400A5EE1E /* MenuItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2916FCE71D5C21A400A5EE1E /* MenuItemView.xib */; };
+		2916FCEA1D5C22F300A5EE1E /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916FCE91D5C22F300A5EE1E /* MenuItemView.swift */; };
 		29BB65F11D5939B10078BDC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB65F01D5939B10078BDC0 /* AppDelegate.swift */; };
-		29BB65F31D5939B10078BDC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB65F21D5939B10078BDC0 /* ViewController.swift */; };
+		29BB65F31D5939B10078BDC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB65F21D5939B10078BDC0 /* HomeViewController.swift */; };
 		29BB65F61D5939B10078BDC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BB65F41D5939B10078BDC0 /* Main.storyboard */; };
 		29BB65F81D5939B10078BDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29BB65F71D5939B10078BDC0 /* Assets.xcassets */; };
 		29BB65FB1D5939B10078BDC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BB65F91D5939B10078BDC0 /* LaunchScreen.storyboard */; };
@@ -38,9 +45,16 @@
 /* Begin PBXFileReference section */
 		290545BA1D59403F00D1C862 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = HymnAll/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		290545BC1D59404200D1C862 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = HymnAll/Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		290545BE1D59526B00D1C862 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		290545C01D59811300D1C862 /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		290545C21D5981A500D1C862 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		290545C41D59A1F800D1C862 /* HymnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HymnView.swift; sourceTree = "<group>"; };
+		290545C61D59A20800D1C862 /* HymnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HymnView.xib; sourceTree = "<group>"; };
+		2916FCE71D5C21A400A5EE1E /* MenuItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemView.xib; sourceTree = "<group>"; };
+		2916FCE91D5C22F300A5EE1E /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		29BB65ED1D5939B10078BDC0 /* HymnAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HymnAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29BB65F01D5939B10078BDC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29BB65F21D5939B10078BDC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29BB65F21D5939B10078BDC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29BB65F51D5939B10078BDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29BB65F71D5939B10078BDC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29BB65FA1D5939B10078BDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,12 +119,19 @@
 		29BB65EF1D5939B10078BDC0 /* HymnAll */ = {
 			isa = PBXGroup;
 			children = (
+				290545BE1D59526B00D1C862 /* background.jpg */,
 				29BB65F01D5939B10078BDC0 /* AppDelegate.swift */,
-				29BB65F21D5939B10078BDC0 /* ViewController.swift */,
+				29BB65F21D5939B10078BDC0 /* HomeViewController.swift */,
 				29BB65F41D5939B10078BDC0 /* Main.storyboard */,
 				29BB65F71D5939B10078BDC0 /* Assets.xcassets */,
 				29BB65F91D5939B10078BDC0 /* LaunchScreen.storyboard */,
 				29BB65FC1D5939B10078BDC0 /* Info.plist */,
+				290545C01D59811300D1C862 /* SearchCell.xib */,
+				290545C21D5981A500D1C862 /* SearchCell.swift */,
+				290545C41D59A1F800D1C862 /* HymnView.swift */,
+				290545C61D59A20800D1C862 /* HymnView.xib */,
+				2916FCE71D5C21A400A5EE1E /* MenuItemView.xib */,
+				2916FCE91D5C22F300A5EE1E /* MenuItemView.swift */,
 			);
 			path = HymnAll;
 			sourceTree = "<group>";
@@ -239,9 +260,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290545C11D59811300D1C862 /* SearchCell.xib in Resources */,
 				29BB65FB1D5939B10078BDC0 /* LaunchScreen.storyboard in Resources */,
+				290545C71D59A20800D1C862 /* HymnView.xib in Resources */,
+				290545BF1D59526B00D1C862 /* background.jpg in Resources */,
 				29BB65F81D5939B10078BDC0 /* Assets.xcassets in Resources */,
 				29BB65F61D5939B10078BDC0 /* Main.storyboard in Resources */,
+				2916FCE81D5C21A400A5EE1E /* MenuItemView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29BB65F31D5939B10078BDC0 /* ViewController.swift in Sources */,
+				290545C51D59A1F800D1C862 /* HymnView.swift in Sources */,
+				29BB65F31D5939B10078BDC0 /* HomeViewController.swift in Sources */,
+				290545C31D5981A500D1C862 /* SearchCell.swift in Sources */,
 				29BB65F11D5939B10078BDC0 /* AppDelegate.swift in Sources */,
+				2916FCEA1D5C22F300A5EE1E /* MenuItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +462,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/HymnAll/Carthage/Build/iOS";
 				INFOPLIST_FILE = HymnAll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.upstream.HymnAll;
+				PRODUCT_BUNDLE_IDENTIFIER = io.upstream.HymnAll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -449,7 +477,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/HymnAll/Carthage/Build/iOS";
 				INFOPLIST_FILE = HymnAll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.upstream.HymnAll;
+				PRODUCT_BUNDLE_IDENTIFIER = io.upstream.HymnAll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
