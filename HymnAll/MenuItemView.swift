@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol MenuDelegate {
+    func buttonPressed()
+}
+
 @IBDesignable class MenuItemView: UIView {
     
+    var delegate: MenuDelegate?
     var view: UIView!
 
     @IBOutlet weak var button: UIButton!
@@ -59,6 +64,10 @@ import UIKit
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         
         return view
+    }
+    
+    @IBAction func buttonTapped(sender: AnyObject) {
+        delegate?.buttonPressed()
     }
 
 }

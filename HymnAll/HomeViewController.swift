@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, MenuDelegate {
     
     final let SHOW_ANIMATION_DURATION = 0.5
     final let HIDE_ANIMATION_DURATION = 0.4
@@ -21,28 +21,31 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTable: UITableView!
+    @IBOutlet weak var addMenuItem: MenuItemView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         searchTable.delegate = self
         searchTable.dataSource = self
+        
+        addMenuItem.delegate = self
 
-        Alamofire.request(.GET, "https://hymnall.herokuapp.com/sushi.json")
-            .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                }
-                
-                let json = JSON(data: response.data!)
-                self.results = json["sushi"].arrayObject as![String]
-                self.searchTable.reloadData()
-        }
+//        Alamofire.request(.GET, "https://hymnall.herokuapp.com/sushi.json")
+//            .responseJSON { response in
+//                print(response.request)  // original URL request
+//                print(response.response) // URL response
+//                print(response.data)     // server data
+//                print(response.result)   // result of response serialization
+//                
+//                if let JSON = response.result.value {
+//                    print("JSON: \(JSON)")
+//                }
+//                
+//                let json = JSON(data: response.data!)
+//                self.results = json["sushi"].arrayObject as![String]
+//                self.searchTable.reloadData()
+//        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -75,6 +78,10 @@ class HomeViewController: UIViewController {
             }, completion: {
                 finished in
         })
+    }
+    
+    func buttonPressed() {
+        performSegueWithIdentifier("add", sender: self)
     }
     
 }
